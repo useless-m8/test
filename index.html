@@ -1,50 +1,83 @@
 <!DOCTYPE html>
 <html lang="ru">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Главная - Сайт</title>
-<meta name="description" content="Краткое описание главной страницы вашего сайта">
-<link rel="icon" href="assets/taco.ico" type="image/x-icon">
-</head>
-<body>
-<!-- Шапка сайта -->
-<header>
-<a href="/">Сайт</a>
-<!-- Главное меню навигации -->
-<nav>
-<ul>
-<li><a href="index.html">Главная</a></li>
-<li><a href="about.html">О нас</a></li>
-<li><a href="contacts.html">Контакты</a></li>
-</ul>
-</nav>
-</header>
-<!-- Уникальное основное содержимое страницы -->
-<main>
-<h1>Добро пожаловать на наш сайт!</h1>
-<!-- Секция 1 с якорем -->
-<section id="services">
-<h2>Наши услуги</h2>
-<p>Описание предоставляемых услуг...</p>
-<a href="#contacts">Связаться с нами</a> <!-- Якорная ссылка внутри страницы -->
-</section>
-<!-- Секция 2 с якорем -->
-<section id="portfolio">
-<h2>Портфолио</h2>
-<p>Примеры наших работ...</p>
-</section>
-<!-- Секция 3 с якорем -->
-<section id="contacts">
-<h2>Контактная информация</h2>
-<p>Наши контакты...</p>
-<a href="contacts.html">Подробнее</a> <!-- Ссылка на отдельную страницу -->
-</section>
-</main>
-<!-- Подвал сайта -->
-<footer>
-<p>&copy; 2023 Название вашего сайта. Все права защищены.</p>
-<p>Телефон: +7 (123) 456-78-90</p>
-</footer>
-</body>
+  <head>
+    <script src="main.js" defer></script>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Главная - Сайт</title>
+    <meta
+      name="description"
+      content="Краткое описание главной страницы вашего сайта"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" href="assets/taco.ico" type="image/x-icon" />
+  </head>
+  <body>
+    <main>
+      <h1 id="welcome">Добро пожаловать на наш сайт!</h1>
+      <!-- Секция 1 с якорем -->
+      <section id="services">
+        <h2>Наши услуги</h2>
+        <div>
+          <img
+            id="taco"
+            src="tacos.png"
+            sizes="(max-width: 700px) 92vw, (max-width: 1200px) 640px, 960px"
+            loading="lazy"
+          />
+        </div>
+
+        <a href="#contacts">Связаться с нами</a>
+        <!-- Якорная ссылка внутри страницы -->
+      </section>
+      <!-- Секция 2 с якорем -->
+      <section id="portfolio">
+        <h2>Портфолио</h2>
+        <p>Примеры наших работ...</p>
+
+        <div class="media">
+          <iframe
+            width="300"
+            height="150"
+            src="https://rutube.ru/play/embed/8a8e79d978f1e6874c7e217f5f9f6af0/"
+            style="border: none"
+            allow="clipboard-write; autoplay"
+            webkitAllowFullScreen
+            mozallowfullscreen
+            allowfullscreen
+          ></iframe>
+        </div>
+      </section>
+      <!-- Секция 3 с якорем -->
+      <section id="contacts">
+        <h2>Контактная информация</h2>
+        <p>Наши контакты...</p>
+        <a href="contacts.html">Подробнее</a>
+        <!-- Ссылка на отдельную страницу -->
+      </section>
+
+      <!-- Кнопка открытия модалки -->
+    </main>
+    <nav class="site-nav" aria-label="Основная навигация">
+      <ul class="site-nav__list">
+        <li class="site-nav__item">
+          <a class="site-nav__link" href="index.html">Главная</a>
+        </li>
+        <li class="site-nav__item">
+          <a class="site-nav__link" href="about.html">О нас</a>
+        </li>
+        <li class="site-nav__item">
+          <a class="site-nav__link site-nav__link-- cta" href="contacts.html"
+            >Связаться</a
+          >
+        </li>
+      </ul>
+    </nav>
+    <footer>
+      <div id="copyright">
+        <p>&copy; 2025 Магазин тако. Все права защищены.</p>
+        <p>Телефон: +7 (123) 456-78-90</p>
+      </div>
+    </footer>
+  </body>
 </html>
