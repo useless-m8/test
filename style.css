@@ -1,0 +1,360 @@
+html {
+  scroll-behavior: smooth;
+}
+
+.montserrat {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.montserrat-bold {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.nav-link {
+  color: black;
+  padding-bottom: 0px;
+}
+
+.nav-link:hover {
+  color: gray;
+}
+
+.nav-link:focus {
+  color: #ef3054;
+}
+
+.dropdown-item:active {
+  color: grey;
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  background-color: white;
+  top: 0;
+  position: sticky;
+  align-items: center;
+  justify-content: center;
+  height: 65px;
+  z-index: 1;
+}
+
+.nav {
+  margin-top: 0px;
+}
+
+.dropdown-menu {
+  z-index: 2000;
+}
+
+.card-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: bottom;
+  filter: brightness(40%);
+}
+
+.card {
+  height: 882px;
+  border-radius: 0;
+}
+.card-img-overlay {
+  padding-bottom: 80px;
+  font-weight: 900;
+}
+
+.btn.btn-outline-primary {
+  width: 200px;
+  height: 70px;
+  border-radius: 17px;
+  border-width: 5px;
+  border-color: white;
+  color: white;
+  font-weight: 900;
+  margin-bottom: -40px;
+}
+
+.btn.btn-outline-primary:hover {
+  background-color: white;
+  color: black;
+  font-weight: 900;
+}
+
+.btn.btn-outline-primary:active {
+  border-color: #ef3054 !important;
+  background-color: #ef3054 !important;
+  color: white;
+}
+
+.card-text {
+  font-size: 20px;
+}
+
+.card-text.love {
+  color: #ef3054;
+  margin-top: -10px;
+}
+
+.card-title {
+  padding-bottom: 200px;
+  font-size: 120px;
+  color: white;
+  letter-spacing: 10px;
+}
+
+.footer-text {
+  color: #ef3054;
+}
+
+.d-block {
+  height: 850px;
+  object-fit: cover;
+  object-position: center;
+  filter: brightness(40%);
+}
+
+.text-main-models {
+  padding-bottom: 450px;
+  font-size: 80px;
+  font-weight: 600;
+  letter-spacing: 10px;
+  color: #ef3054;
+}
+
+.btn.btn-outline-primary.carousel {
+  margin-bottom: 20px;
+}
+
+.down-arrow {
+  background-color: transparent;
+  border: none;
+  margin-bottom: -50px;
+  margin-top: 100px;
+}
+
+.img-down-arrow {
+  height: 100px;
+}
+
+.img-down-arrow:hover {
+  scale: 1.1;
+  transition: scale 0.3s ease;
+}
+
+.about-us {
+  width: 100%;
+  height: 700px;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.9)),
+    url("https://cdn.shopify.com/s/files/1/0661/3254/1681/files/DSC2145_BW_Edit2.jpg?v=1724343227");
+}
+
+.about-title {
+  font-size: 70px;
+  padding-top: 50px;
+  padding-left: 50px;
+  text-align: center;
+
+  font-weight: 600;
+
+  letter-spacing: 10px;
+
+  color: #ef3054;
+}
+
+.about-image {
+  position: absolute;
+  right: 0;
+  height: 550px;
+  padding-right: 50px;
+  padding-bottom: 100px;
+}
+
+.about-image-wrapper {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.about-caption {
+  position: absolute;
+  left: 0;
+  margin-left: 50px;
+  height: 450px;
+  width: 1000px;
+  padding: 25px;
+  font-size: 25px;
+  border: 6px solid #ef3054;
+  border-radius: 17px;
+  background-color: transparent;
+  color: white;
+  text-align: left;
+  font-weight: 700;
+}
+
+.container.wrapper {
+  width: 100%;
+  padding-top: 30px;
+}
+
+.location {
+  height: 700px;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.5)),
+    url("https://weismfg.com/cdn/shop/articles/2020-11-14_08-39-49.jpg?v=1664481316&width=1500");
+}
+
+.location-title {
+  color: #ef3054;
+  font-size: 70px;
+  text-align: center;
+  padding-top: 40px;
+
+  font-weight: 600;
+
+  letter-spacing: 10px;
+}
+
+.location-map {
+  padding-top: 25px;
+  text-align: center;
+}
+
+.bikes-wrapper {
+  margin-top: -80px;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)),
+    url("https://weismfg.com/cdn/shop/articles/GPTempDownload.jpg?v=1664480904&width=1500");
+}
+
+.img-purchase {
+  display: block;
+  height: 600px;
+  filter: brightness(100%);
+  transition: filter 0.5s ease;
+}
+
+.btn.purchase {
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.25);
+  position: absolute;
+  bottom: 30px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1;
+  text-shadow: 0px 1px 2px rgb(0 0 0 / 80%);
+}
+
+.caption1 {
+  position: absolute;
+  bottom: 300px;
+  left: 50%;
+  transform: translateX(-50%);
+
+  font-size: 20px;
+  text-align: center;
+  opacity: 0;
+  transition: opacity 0.5s ease;
+}
+
+.col.col1 {
+  display: flex;
+  height: 700px;
+  width: 100%;
+  margin-right: auto;
+  margin-left: 0;
+  color: transparent;
+  padding-bottom: 20px;
+}
+
+.col.col1:hover .img-purchase {
+  filter: brightness(50%);
+  transition: filter 0.5s ease;
+}
+.col.col1:hover .caption1 {
+  color: white;
+  opacity: 1;
+  transition: opacity 0.5s ease;
+}
+
+.col.col2 {
+  height: 700px;
+  width: 100%;
+  margin-right: auto;
+  margin-left: 0;
+  padding-bottom: 20px;
+  color: transparent;
+}
+
+.col.col2:hover .img-purchase {
+  filter: brightness(50%);
+  transition: filter 0.5s ease;
+}
+
+.col.col2:hover .caption1 {
+  color: white;
+  opacity: 1;
+  transition: opacity 0.5s ease;
+}
+
+.col.col3 {
+  height: 605px;
+  width: 100%;
+  margin-right: auto;
+  margin-left: 0;
+  color: transparent;
+}
+
+.col.col3:hover .img-purchase {
+  filter: brightness(50%);
+  transition: filter 0.5s ease;
+}
+
+.col.col3:hover .caption1 {
+  color: white;
+  opacity: 1;
+  transition: opacity 0.5s ease;
+}
+
+.col3 .img-purchase {
+  width: 100%;
+  height: 600px;
+  object-fit: contain;
+}
+
+.contact-wrapper {
+  width: 1920px;
+  height: 826px;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.6)),
+    url("https://cdn.shopify.com/s/files/1/0661/3254/1681/files/DSC2223_BW_Edit2.jpg?v=1724343234");
+
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.form-wrapper {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 700px;
+}
+
+.form-control {
+  border-radius: 12px;
+  font-weight: 600;
+}
+
+.form-control.message {
+  height: 200px;
+}
+
+.contact-title {
+  color: #ef3054;
+  font-size: 80px;
+  font-weight: 600;
+  letter-spacing: 10px;
+  padding-bottom: 20px;
+}

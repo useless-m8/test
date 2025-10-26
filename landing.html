@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Fixed gear</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <ul class="nav nav-underline justify-content-center montserrat-bold">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#">Home</a>
+        </li>
+        <li class="nav-item">
+          <a
+            class="nav-link"
+            href="bikes.html"
+            role="button"
+            aria-expanded="false"
+            >Bikes</a
+          >
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="landing.html#about-us">About us</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="contact.html">Contacts</a>
+        </li>
+      </ul>
+      <hr class="header-hr m-0" />
+    </header>
+
+    <div class="card text-bg-dark montserrat-bold">
+      <img
+        src="https://cdn.shopify.com/s/files/1/0661/3254/1681/files/weis-62.jpg?v=1736191366"
+        class="card-img"
+        alt="..."
+      />
+      <div
+        class="card-img-overlay d-flex flex-column justify-content-end align-items-center text-center"
+      >
+        <h1 class="card-title montserrat-bold">FIXED GEAR BIKES</h1>
+        <p class="card-text">Check our newly produced fixed gear bikes.</p>
+        <p class="card-text love">Made with love.</p>
+        <a href="bikes.html">
+          <button type="button" class="btn btn-outline-primary btn-lg">
+            Get one
+          </button>
+        </a>
+
+        <a href="#carouselExampleCaptions">
+          <button class="down-arrow">
+            <img src="assets/arrow.svg" class="img-down-arrow" />
+          </button>
+        </a>
+      </div>
+    </div>
+
+    <div id="carouselExampleCaptions" class="carousel slide montserrat-bold">
+      <div class="carousel-indicators">
+        <button
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide-to="0"
+          class="active"
+          aria-current="true"
+          aria-label="Slide 1"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide-to="1"
+          aria-label="Slide 2"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide-to="2"
+          aria-label="Slide 3"
+        ></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img
+            src="https://cdn.shopify.com/s/files/1/0661/3254/1681/files/weis-6.jpg?v=1736191375"
+            class="d-block w-100"
+            alt="..."
+          />
+
+          <div class="carousel-caption d-none d-md-block">
+            <h1 class="text-main-models">OUR BIKES</h1>
+            <h5>TITAN TRACK</h5>
+            <p>Default track model.</p>
+            <button
+              type="button"
+              class="btn btn-outline-primary carousel btn-lg"
+            >
+              Ti TRACK
+            </button>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img
+            src="https://cdn.shopify.com/s/files/1/0661/3254/1681/files/SLIDE_1_IMG_9425_EDIT.jpg?v=1748031930"
+            class="d-block w-100"
+            alt="..."
+          />
+          <div class="carousel-caption d-none d-md-block">
+            <h5>TRACK CUSTOM</h5>
+            <p>Custom track model.</p>
+            <button
+              type="button"
+              class="btn btn-outline-primary carousel btn-lg"
+            >
+              Cu TRACK
+            </button>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img
+            src="https://cs13.pikabu.ru/post_img/big/2024/06/18/9/1718722426222331774.png"
+            class="d-block w-100"
+            alt="..."
+          />
+          <div class="carousel-caption d-none d-md-block">
+            <h5>GRAVEL</h5>
+            <p>Dirt model.</p>
+            <button
+              type="button"
+              class="btn btn-outline-primary carousel btn-lg"
+            >
+              GRAVEL
+            </button>
+          </div>
+        </div>
+      </div>
+      <button
+        class="carousel-control-prev"
+        type="button"
+        data-bs-target="#carouselExampleCaptions"
+        data-bs-slide="prev"
+      >
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button
+        class="carousel-control-next"
+        type="button"
+        data-bs-target="#carouselExampleCaptions"
+        data-bs-slide="next"
+      >
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+
+    <div id="about-us" class="about-us">
+      <h1 class="about-title montserrat-bold">ABOUT US</h1>
+      <div class="container wrapper">
+        <div class="row">
+          <div class="col about-caption montserrat-bold">
+            At Fixed Gear Bikes, we live and breathe the simplicity and style of
+            fixed-gear riding. Our passion is helping riders—from beginners to
+            seasoned urban cyclists—get the most out of their bikes. Whether
+            it’s custom builds, precision tuning, or routine maintenance, we
+            combine expert craftsmanship with a love for the cycling community.
+            We believe in the beauty of minimalism, the thrill of the ride, and
+            the connection between rider and machine. Every gear we adjust,
+            every frame we touch, and every wheel we spin is a step toward the
+            perfect ride. Stop by, share your story, and let’s keep your
+            fixed-gear rolling smoothly on every street.
+          </div>
+          <div class="col d-flex justify-content-end about-image-wrapper">
+            <img
+              class="about-image"
+              src="https://cdn.shopify.com/s/files/1/0661/3254/1681/files/DSCF0698_jpg.webp?v=1754664008"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="location">
+      <h1 class="location-title montserrat-bold">WHERE TO FIND US</h1>
+
+      <div class="location-map">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.086043799653!2d-122.41941508468125!3d37.77492927975919!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8085815c7a0e0c2b%3A0x123456789abcdef!2sSan+Francisco%2C+CA!5e0!3m2!1sen!2sus!4v1695747600000!5m2!1sen!2sus"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+          width="900px"
+          height="500px"
+        >
+        </iframe>
+      </div>
+    </div>
+
+    <footer class="bg-body-tertiary text-center text-lg-start montserrat-bold">
+      <div
+        class="text-center p-3"
+        style="background-color: rgba(0, 0, 0, 0.05)"
+      >
+        © 2025 Copyright:
+        <a class="text-body" href="#">Fixed gear bikes.</a>
+      </div>
+    </footer>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
