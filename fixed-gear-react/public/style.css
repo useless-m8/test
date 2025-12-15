@@ -58,12 +58,10 @@ header {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  object-position: bottom;
+  object-position: center;
   filter: brightness(40%);
 }
-
 .card {
-  height: 882px;
   border-radius: 0;
 }
 .card-img-overlay {
@@ -161,11 +159,8 @@ header {
   padding-top: 50px;
   padding-left: 50px;
   text-align: center;
-
   font-weight: 600;
-
   letter-spacing: 10px;
-
   color: #ef3054;
 }
 
@@ -208,25 +203,35 @@ header {
   background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.5)),
     url("https://weismfg.com/cdn/shop/articles/2020-11-14_08-39-49.jpg?v=1664481316&width=1500");
 }
+.location-map {
+  text-align: center;
+  padding-top: 25px;
+  overflow: hidden;
+}
 
+.location-map .ratio {
+  max-width: 900px;
+  margin: 0 auto;
+  border-radius: 17px;
+}
+
+.location-map iframe {
+  width: 100% !important;
+  height: 100% !important;
+  border: 0;
+  display: block;
+}
 .location-title {
   color: #ef3054;
   font-size: 70px;
   text-align: center;
   padding-top: 40px;
-
   font-weight: 600;
-
   letter-spacing: 10px;
 }
 
-.location-map {
-  padding-top: 25px;
-  text-align: center;
-}
-
 .bikes-wrapper {
-  margin-top: -80px;
+  margin-top: -0px;
   background-image: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)),
     url("https://weismfg.com/cdn/shop/articles/GPTempDownload.jpg?v=1664480904&width=1500");
 }
@@ -253,7 +258,6 @@ header {
   bottom: 300px;
   left: 50%;
   transform: translateX(-50%);
-
   font-size: 20px;
   text-align: center;
   opacity: 0;
@@ -322,15 +326,17 @@ header {
 .col3 .img-purchase {
   width: 100%;
   height: 600px;
-  object-fit: contain;
+  object-fit: cover;
+  object-position: center;
 }
 
 .contact-wrapper {
-  width: 1920px;
-  height: 826px;
+  width: 100%;
+  min-height: 100vh;
+  height: auto;
+  padding: 2rem 1rem;
   background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.6)),
     url("https://cdn.shopify.com/s/files/1/0661/3254/1681/files/DSC2223_BW_Edit2.jpg?v=1724343234");
-
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -357,4 +363,178 @@ header {
   font-weight: 600;
   letter-spacing: 10px;
   padding-bottom: 20px;
+}
+
+.card {
+  height: auto;
+  min-height: 75vh;
+}
+
+.d-block {
+  height: 75vh;
+}
+
+.card-title {
+  font-size: clamp(2.2rem, 6vw, 7.5rem);
+  letter-spacing: clamp(2px, 1vw, 10px);
+  padding-bottom: clamp(2rem, 10vw, 200px);
+  text-align: center;
+}
+
+.text-main-models {
+  font-size: clamp(2rem, 5vw, 5rem);
+  padding-bottom: clamp(3rem, 20vw, 450px);
+  letter-spacing: clamp(2px, 1vw, 10px);
+}
+
+@media (max-width: 992px) {
+  .about-us {
+    height: auto;
+    padding-bottom: 2rem;
+  }
+  .about-caption {
+    position: static;
+    width: 100%;
+    height: auto;
+    margin: 1rem 0;
+    font-size: 1.05rem;
+  }
+
+  .about-image {
+    position: static;
+    width: 100%;
+    height: auto;
+    padding: 0;
+    max-width: 520px;
+  }
+
+  .about-image-wrapper {
+    justify-content: center !important;
+    margin-top: 1rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .card {
+    min-height: 60vh;
+  }
+
+  .card-img {
+    min-height: 60vh;
+  }
+
+  .card-img-overlay {
+    padding-bottom: 40px;
+  }
+  header {
+    height: auto;
+    padding: 0.5rem 0;
+  }
+
+  .img-purchase {
+    height: auto;
+    max-height: 420px;
+    width: 100%;
+    object-fit: cover;
+  }
+
+  .caption1 {
+    bottom: 35%;
+    font-size: 1rem;
+  }
+
+  .location {
+    height: auto;
+    padding-bottom: 2rem;
+  }
+
+  .form-wrapper {
+    position: static;
+    transform: none;
+    width: 100%;
+    max-width: 700px;
+    margin: 0 auto;
+  }
+
+  .contact-title {
+    font-size: clamp(2rem, 7vw, 5rem);
+    text-align: center;
+  }
+
+  .d-block {
+    height: 55vh;
+  }
+}
+
+@media (max-width: 1800px) {
+  .about-us {
+    height: auto;
+    padding-bottom: 2rem;
+  }
+
+  .about-caption {
+    position: static;
+    width: 100%;
+    height: auto;
+    margin: 1rem 0;
+    font-size: 1.1rem;
+  }
+
+  .about-image {
+    position: static;
+    width: 100%;
+    height: auto;
+    max-width: 520px;
+    padding: 0;
+    margin: 0 auto;
+    display: block;
+  }
+
+  .about-image-wrapper {
+    justify-content: center !important;
+    margin-top: 1rem;
+  }
+}
+.card {
+  height: clamp(500px, 95vh, 900px);
+}
+
+.col1:hover .img-purchase,
+.col2:hover .img-purchase,
+.col3:hover .img-purchase {
+  filter: brightness(50%);
+  transition: filter 0.5s ease;
+}
+
+.col1:hover .caption1,
+.col2:hover .caption1,
+.col3:hover .caption1 {
+  color: white;
+  opacity: 1;
+  transition: opacity 0.5s ease;
+}
+
+.react-animate-hidden {
+  opacity: 0;
+  transform: translateY(8px);
+  filter: blur(2px);
+  will-change: opacity, transform, filter;
+}
+
+.react-animate-show {
+  opacity: 1;
+  transform: translateY(0);
+  filter: blur(0);
+  transition: opacity 320ms ease, transform 320ms ease, filter 320ms ease;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .react-animate-hidden {
+    opacity: 1;
+    transform: none;
+    filter: none;
+  }
+  .react-animate-show {
+    transition: none;
+  }
 }
